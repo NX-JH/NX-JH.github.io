@@ -1,0 +1,921 @@
+/*-------------------VALIDATED 23/7-----------------------*/
+
+/*SHARED*/
+
+
+#summary{display:none}
+
+#body1{background-color:#FFF8E7;margin:0%}
+.content{margin-left:1%;margin-right:1%}
+
+.nav1{display:flex; 
+      background-color:#4A2C1A;
+      color:white;}
+
+#p1{
+    margin-left:2%;
+    flex:1;
+    color:#FFF5E8;
+    font-size:220%;
+}
+
+#menu{
+    flex:3;
+    display:flex;
+    gap:0.2%;
+    text-align:center;
+    margin-top:2%;
+}
+
+#page0btn,
+#page1btn,
+#page2btn,
+#page3btn{
+    background:none;
+    border:none;
+    font-size:170%;
+    color:white;
+    transition: 0.3s ease;
+}
+
+
+#page0btn:hover,
+#page1btn:hover,
+#page2btn:hover,
+#page3btn:hover{
+  color:#FFD28A;
+  transform: scale(1.2);
+}
+
+
+.active{
+    text-decoration:underline;
+    color:#FFD28A;
+    border-bottom:3px solid #FFD28A;
+}
+
+#span0{flex:1;}
+#span1{flex:1;}
+#span2{flex:1;}
+#span3{flex:1;}
+
+.footer1{
+    background:#2F1D14;
+    color:#FFF8E7;
+    text-align:center;
+    padding:1%;
+    margin-top:2%;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
+
+
+#btnFS{background-color:#C68642;color: white;border:none;transition: 0.3s ease;width:80px;border-radius:8px}
+#btnWS{background-color:#8B5E3C;color: white;border:none;transition: 0.3s ease;width:80px;border-radius:8px}
+
+#btnFS:hover,
+#btnWS:hover{transform: scale(1.05);}
+
+
+#footerpt1{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:20px;   /* Space between buttons section and QR code */
+}
+
+.fullscreen{
+    display:flex;
+    flex-direction:column;   /* Buttons side by side */
+    gap:10px;             /* Space between buttons */
+}
+
+#divqr{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#qrcode{
+    width:80px;
+    height:auto;
+}
+#instagramlogo,
+#youtubelogo,
+#facebooklogo{width:10%;vertical-align:middle;
+transition:0.2s ease}
+
+#instagramlogo:hover,
+#youtubelogo:hover,
+#facebooklogo:hover{transform:scale(1.2)}
+
+.backtotop{
+    text-decoration:none;
+    color:#4A2C1A;
+    background:#E8C88A;
+    border-radius:5px;
+    padding:8px;
+}
+
+.backtotop:hover{
+    background:#D9B36A;
+}
+
+/*Loading Page*/
+
+#loadingScreen{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100vh;
+
+    background:#FFF8E7;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    z-index:1; /*Ensures that its above everything else*/ /*Z-axis*/
+}
+
+#loadingh1{
+    font-size:60px;
+    color:#5C3A21;
+}
+
+#loadingp1{
+    font-size:24px;
+    color:#8B5E3C;
+    margin:20px;
+}
+
+#bakerSprite{
+    width:155px;
+    height:175px;
+    background-image:url("images.A02/bakerSprite.png");
+    background-repeat:no-repeat;
+}
+
+
+
+#startBtn{
+    margin-top:2%;
+    padding:2% 4%;
+    font-size:130%;
+
+    border:none;
+    border-radius:10px;
+
+    background:#C68642;
+    color:white;
+
+    cursor:pointer; /*Becomes hand when hovering*/
+    transition:.3s;
+}
+
+#startBtn:hover{
+    transform:scale(1.08);
+    background:#A66A2C;
+}
+
+
+/*HOME PAGE*/
+
+#page0header{
+    background-image:url(images.A02/homepagebg.jpg);
+    background-size:100%;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding-bottom:8%;
+    width:100%;
+}
+
+#page0h2{margin-left:2%;
+    font-size:420%;
+    max-width:40%;
+    color:#3A2416;
+     margin-top:0%;
+
+}
+
+#page0p1{margin-left:2%;
+    font-size:150%;
+    max-width:50%;
+    color:#5A3B27;
+}
+
+.page0pt1{
+    display:grid;
+    grid-template-columns:1fr 2fr 2fr;
+    gap:2%;
+    align-items:center;
+    margin-top:2%
+}
+
+#breaddeco6{width:100%}
+
+#breadjourney{font-size:110%}
+
+#breadbg{
+    border-radius:10%;
+    width:100%;
+
+     animation:enlarge 5s ease-in-out infinite;
+}
+
+@keyframes enlarge{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.03);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+#exploreweb{
+    text-align:center;
+}
+
+.page0pt2{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:2%;
+    text-align:center;
+}
+
+#historyofbread,
+#typesofbread,
+#gamesandquizzes{
+     background:#6E4B33;
+    border-radius:15px;
+
+    transition:0.3s ease
+}
+
+#historyofbread:hover,
+#typesofbread:hover,
+#gamesandquizzes:hover{transform: scale(1.1);}
+
+#h2hob{color:#FFFFFF;}
+#phob{color:#F5EBDC;}
+
+#h2tob{color:#FFFFFF;}
+#ptob{color:#F5EBDC;}
+
+#h2gaq{color:#FFFFFF;}
+#pgaq{color:#FFF3E0;}
+
+
+
+#historyletterimg{width:30%;}
+#typesofbreadimg{width:30%;}
+#gamesandquizzesimg{width:30%;}
+
+.page0pt3{
+    display:flex;
+    background-color:#F9EFD8;
+    border:2px solid #E6D0A8;
+    border-radius:15px;
+    margin-top:2%;
+}
+
+
+#Croissant{width:80%;
+animation:spin 8s ease-in-out infinite;}
+
+@keyframes spin{
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(8deg);
+    }
+
+    75%{
+        transform: rotate(-8deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+#h1Croissant{
+    color:#4A2C1A;
+}
+
+#croissantName,
+#breadDayTitle{
+    color:#4A2C1A;
+}
+
+#pCroissant{
+    max-width:60%;
+    color:#6E4B33;
+}
+
+#breaddeco8{
+    width:80%;
+}
+
+#pt4header{
+    text-align:center;
+}
+
+.breadarntheworld{
+    display:grid;
+    grid-template-columns:0.1fr 1fr 1fr 1fr 1fr 1fr 0.1fr;
+    text-align:center;
+    gap:1%;
+    align-items:center;
+}
+
+.breadCard{
+     background:#FFF6E7;
+    border:2px solid #D9B36A;
+    color:#4A2C1A;
+    border-radius: 10%;
+}
+
+#prevBtn,
+#nextBtn{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background-color:#C68642;
+    color:white;
+    font-size:24px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:0.5s ease;
+}
+
+#prevBtn:hover,
+#nextBtn:hover{
+  transform:scale(1.1);
+  background:#A66A2C;
+}
+
+.page0pt5{
+    display:grid;
+    grid-template-columns:1fr 3fr;
+    background-color:#F5E7C8;
+    margin-top:2%;
+    border-radius: 20px;
+}
+
+
+#page0ff{
+    color:#C68642;
+}
+
+#page0ffp{
+    color:#3E2C1C;
+    max-width:100%;
+}
+
+
+
+.arrowup{width:20%}
+.page0pt5div1{ display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;}
+.page0pt5div2{display:flex;}
+
+/*HISTORY PAGE*/
+
+#page1header{
+    color:white;
+    background-image:url(images.A02/historypagebg.jpg);
+    background-size:100%;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding-bottom:8%;
+
+}
+
+#page1h2{
+    margin-left:2%;
+    font-size:420%;
+    color:#3A2416;
+    max-width:40%;
+    margin-top:0%;
+}
+
+#page1p1{
+  margin-left:2%;
+    font-size:150%;
+    max-width:50%;
+       color:#5A3B27;
+}
+
+.divstart{
+    display:flex;
+}
+
+#sticker1{
+    width:10%;
+}
+
+#h21{
+    font-size:300%;
+}
+
+#p4{
+    font-size:250%;
+    text-align:end;
+}
+
+.sec1{display:flex;}
+.sec2{display:flex;}
+.sec3{display:flex;}
+.sec4{display:flex;}
+.sec5{display:flex;}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5{
+    width:100%;
+    border-radius:10%;
+}
+
+#grains,
+#breadwyeast,
+#breadaroundtw{
+    width:50%;
+    border-radius:10%;
+    margin-right:2%;
+    margin-top:2%;
+    margin-bottom:2%;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+#flatbread,
+#modernbread{ 
+    width:50%;
+    border-radius:10%;
+    margin-left:2%;
+    margin-top:2%;
+    margin-bottom:2%;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+
+.p5{
+    color:rgb(246,156,47);
+}
+.div2ndpage,
+.div1stpage{
+    color:#5C3A21;
+    background-color:#ffffff;
+    margin-top:2%;
+    margin-bottom:2%;
+    font-size:120%;
+    border-radius:5%;
+}
+
+
+.p8{
+    color:rgb(246,156,47);
+}
+
+
+
+
+
+
+#img7{
+    width:10%;
+}
+
+#page1ff{
+    color:#C68642;
+}
+
+#page1ffp{
+    color:#3E2C1C;
+}
+
+
+
+
+
+
+/*TYPES OF BREAD PAGE*/
+
+
+#page2header{
+    color:white;
+    background-image:url(images.A02/typespagebg.jpg);
+    background-size:100%;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding-bottom:8%;
+}
+
+#page2h2{margin-left:2%;
+  max-width:50%;
+    font-size:420%;
+    color:#3A2416;
+    margin-top:0%;
+}
+
+#page2p1{margin-left:2%;
+    font-size:150%;
+    max-width:50%;
+       color:#5A3B27;
+}
+
+#sec6{
+    background-color:#F4DFC0;
+    display:flex;
+    border-radius:20px;
+}
+
+
+
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8{
+    background-color:#FFF7EB;
+    color:#3E2C1C;
+    border-radius:5%;
+    box-shadow:5px 5px 10px 0px rgb(128,128,128);
+
+    transition:transform 0.3s ease;
+}
+
+
+
+.div3:hover,
+.div4:hover,
+.div5:hover,
+.div6:hover,
+.div7:hover,
+.div8:hover{
+    transform:scale(1.1);
+}
+
+#img8,
+#img9,
+#img10,
+#img11,
+#img12,
+#img13{
+    width:100%;
+    border-radius:5%;
+}
+
+.divtextcen{
+    text-align:center;
+}
+
+#page2ff{
+    color:#C68642;
+}
+
+#page2ffp{
+    color:#3E2C1C;
+    max-width:85%;
+}
+
+.main1{
+    display:flex;
+    margin-top:4%;
+    justify-content:space-evenly;
+    gap:20px;
+}
+
+#breadtypes{
+    flex:3;
+
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:20px;
+}
+
+.recipePanel{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    text-align:center;
+
+    background:#FFF3DE;
+    border:3px dashed #C68642;
+    border-radius:15px;
+}
+
+#h24{
+    color:#4A2C1A;
+}
+
+#recipeImg{
+    width:50%;
+}
+
+
+
+ /*GAMES & QUIZZES PAGE*/
+
+
+#page3header{
+    color:white;
+    background-image:url(images.A02/gamespagebg.jpg);
+    background-size:100%;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding-bottom:8%;
+    text-align:center;
+    margin-bottom:5%
+}
+
+#page3h2{
+    font-size:420%;
+    color:#3A2416;
+    margin-top:0%;
+
+}
+
+#page3p1{
+    font-size:150%;
+    color:#5A3B27;
+    margin-left:25%;
+    margin-right:25%;
+}
+
+#sec10{
+    background-color:#F4DFC0;
+    margin-top:2%;
+    display:flex;flex-direction:row
+}
+
+.div12{
+    flex:1
+}
+
+.div13{
+    flex:3
+}
+
+
+#img18{
+    width:10%;
+}
+
+.underline{
+    border-bottom:3px solid #e97800;
+    color:#A66A2C;
+}
+
+#game{
+    position:relative;
+    background-color:#ffffff;
+    border:2px solid black;
+    padding-bottom:50%;
+}
+
+#basketwithoutbread{
+    width:10%;
+    position:absolute;
+    bottom:0%;
+}
+
+
+#breadpos{
+    width:10%;
+    position:absolute;
+    animation:spin 2s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.fieldset{
+    background-color:#FFFDF8;
+    border:2px solid #D9B36A;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.legend{
+    color:#A66A2C;
+    font-weight:bold;
+}
+
+#quizbtnSubmit{ 
+   background-color:#C68642;
+    color:white;
+    border:none;
+    border-radius:8px;
+    padding:12px 20px;}
+
+
+/*Responisve web design*/
+@media (max-width:800px) {
+
+#menu{display:none}
+  
+#summary{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+
+}
+
+summary::marker{ /*Remove triangle*/
+    content: "";
+}
+
+/*Home*/
+
+#page0h1{margin-left:2%;
+    font-size:400%;
+    max-width:65%;
+    color:#3A2416;
+
+}
+
+#page0p1{margin-left:2%;
+    font-size:150%;
+    max-width:55%;
+    color:#5A3B27;
+}
+
+.page0pt1{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2%;
+    align-items:center;
+    margin-top:2%
+}
+
+.divdeco6{display:none}  
+
+
+.page0pt2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2%;
+    text-align:center;
+}
+
+#gamesandquizzes{
+    background-color:#C68642;
+    border-radius:5%;
+      grid-column: span 2;
+}
+.page0pt3{
+    display:flex;
+    background-color:#F9EFD8;
+    border:2px solid #E6D0A8;
+    border-radius:5%;
+    margin-top:5%;
+    align-items:center;
+
+}
+
+#Croissantdivdeco{
+   display:none
+}
+
+#Croissantdivimage{flex:1}
+#Croissantdivtext{flex:1}
+
+.breadCard{
+    background:#FFF6E7;
+    border:2px solid #D9B36A;
+    border-radius:10%;
+    height:100%;
+}
+.breadCard h3{
+    font-size:90%;
+}
+
+.breadCard p{
+    font-size:85%;
+}
+
+#footerpt1{display:flex;flex-direction: row;}
+
+/* History Page */
+
+#page1h1{
+    margin-left:2%;
+    font-size:400%;
+    color:#3A2416;
+    max-width:55%;
+}
+
+#page1p1{
+  margin-left:2%;
+    font-size:150%;
+    max-width:60%;
+       color:#5A3B27;
+}
+
+.sec1,
+.sec3,
+.sec5{
+    flex-direction:column;
+}
+
+.sec2,
+.sec4{
+    flex-direction:column-reverse;
+}
+
+#grains,
+#breadwyeast,
+#breadaroundtw,
+#flatbread,
+#modernbread{width:100%;
+}
+
+/* TypesOfBread */
+
+#page2h1{ max-width:80%;}
+
+#page2p1{max-width:50%;}
+
+.main1{
+    display:flex;flex-direction: column;
+}
+#breadtypes{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+#recipepanel{width:100%}
+
+/* Games And Quizzes */
+
+#instagramlogo,
+#youtubelogo,
+#facebooklogo{width:20%}
+
+.fullscreen{display:flex;flex-direction: row;}
+#divqr{
+    display:none
+
+}
+
+#span0mobile{flex:1;}
+#span1mobile{flex:1;}
+#span2mobile{flex:1;}
+#span3mobile{flex:1;}
+
+}
+
+
+

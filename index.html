@@ -1,0 +1,739 @@
+<!--VALIDATED 23/7-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+        
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1">
+
+    <meta charset="UTF-8">
+
+    <title> Bread! </title>
+
+    <link href="A2Style.css" type="text/css" rel="stylesheet">
+    <script src="A2Main.js" defer></script>
+
+
+</head>
+
+<body id="body1">
+
+  <div id="loadingScreen">
+
+    <h1 id="loadingh1">Bread's Journey</h1>
+
+    <div id="bakerSprite"></div>
+
+    <p id="loadingp1">Preparing fresh bread...</p>
+
+    <button id="startBtn">Start Your Journey</button>
+
+</div>
+
+  <nav class="nav1" id="nav1">
+
+  <h2 id="p1">
+    Bread's Journey
+  </h2>
+
+  <div id="menu">
+   
+      <span id="span0"><button id="page0btn">Home</button></span>
+      <span id="span1"><button id="page1btn">History</button></span>
+      <span id="span2"><button id="page2btn">Types</button></span>
+      <span id="span3"><button id="page3btn">Quizzes</button></span>
+    
+  </div>
+
+    <div id="summary">
+    <details>
+      <summary>☰ Menu </summary>
+      <span id="span0mobile"><button id="page0btnmobile">Home</button></span>
+      <span id="span1mobile"><button id="page1btnmobile">History</button></span>
+      <span id="span2mobile"><button id="page2btnmobile">Types</button></span>
+      <span id="span3mobile"><button id="page3btnmobile">Quizzes</button></span>
+    </details>
+    </div>
+
+  </nav>
+
+  <section class="page" id="page0">
+      
+  <header id="page0header">
+        
+    <div>
+      <h2 id="page0h2">Discover the World of Bread</h2>
+    </div>
+
+    <div>
+      <p id="page0p1">
+        Discover the history of bread, explore breads from around the world,
+        and test your knowledge with fun games and quizzes.
+      </p>
+    </div>
+
+  </header><!--page0header-->
+
+  <div class="content">
+
+    <section class="page0pt1">
+          
+      <div class="divdeco6">
+        <img src="images.A02/breaddeco6.png" id="breaddeco6" alt="An image of 3 delicious looking bread used for decoration">
+      </div>
+
+      <div id="breadjourney">
+
+        <h2>Welcome to Bread's Journey</h2>
+
+        <p>
+          Bread has been part of human history for over 14 000 years.From
+          simple flatbreads to buttery Croissant,it has evolved across cultures
+          and remains a beloved food worldwide.
+        </p>
+
+        <p>This website lets you:</p>
+
+        <p>-Learn the rich history of bread</p>
+        <p>-Explore different types of bread</p>
+        <p>-Learn different variety of bread recipe</p>
+        <p>-Play fun games and quizzes</p>
+
+      </div><!--breadjourney-->
+
+      <div>
+        <img src="images.A02/breadbg.png" id="breadbg" alt="An image of assorted bread illustration">
+      </div>
+
+    </section><!--page0pt1-->
+
+    <h2 id="exploreweb">Explore The Website</h2>
+
+    <section class="page0pt2">
+
+      <div id="historyofbread">
+
+        <img src="images.A02/historyletter.png" id="historyletterimg" alt="History of bread icon">
+
+        <h2 id="h2hob">History Of Bread</h2>
+
+        <p id="phob">
+          Travel back in time and discover how bread was discovered
+          and became essential to human civillzation
+        </p>
+
+      </div><!--historyofbread-->
+
+      <div id="typesofbread">
+
+        <img src="images.A02/typesofbread.png" id="typesofbreadimg" alt="Types of bread icon">
+
+        <h2 id="h2tob">Type Of Breads</h2>
+
+        <p id="ptob">
+          Explore 6 different types of bread from around the world
+          and learn what makes each bread unique.
+        </p>
+
+      </div><!--typesofbread-->
+
+      <div id="gamesandquizzes">
+
+        <img src="images.A02/gamesandquizzes.png" id="gamesandquizzesimg" alt="Games and quizzes icon">
+
+        <h2 id="h2gaq">Games and Quizzes</h2>
+
+        <p id="pgaq">
+          Play challenging mini games and take quizzes to test ur understanding and
+          challenge yourself!
+        </p>
+
+      </div><!--gamesandquizzes-->
+
+    </section><!--page0pt2-->
+
+    <section class="page0pt3">
+
+      <div id="Croissantdivimage">
+        <img src="images.A02/Croissant.png" id="Croissant" alt="Croissant">
+      </div>
+
+      <div id="Croissantdivtext">
+        <h2 id="breadDayTitle">Bread Of The Day</h2>
+        <h3 id="croissantName">Croissant</h3>
+
+        <p id="pCroissant">
+          shatteringly crisp, flaky crust and a pillowy, web-like, and airy interior.
+          Its flavor is heavily characterized by rich, creamy butter with a delicate hint of sweetness and a touch of salt
+        </p>
+      </div>
+
+      <div id="Croissantdivdeco">
+        <img src="images.A02/breaddeco8.png" id="breaddeco8" alt="colorless gradient like Croissant">
+      </div>
+
+    </section><!--page0pt3-->
+
+    <section class="page0pt4">
+
+      <h2 id="pt4header">Bread Around The World</h2>
+
+      <div class="breadarntheworld">
+
+        <button id="prevBtn">❮</button>
+
+        <div class="breadCard">
+          <img id="img1" class="imagesize" src="images.A02/arrowup.png" alt="Different types of bread from around the world">
+          <h3 id="bread1">Loading...</h3>
+          <p id="country1">Loading...</p>
+        </div>
+
+        <div class="breadCard">
+          <img id="img2" class="imagesize" src="images.A02/arrowup.png" alt="Different types of bread from around the world">
+          <h3 id="bread2">Loading...</h3>
+          <p id="country2">Loading...</p>
+        </div>
+
+        <div class="breadCard">
+          <img id="img3" class="imagesize" src="images.A02/arrowup.png" alt="Different types of bread from around the world">
+          <h3 id="bread3">Loading...</h3>
+          <p id="country3">Loading...</p>
+        </div>
+
+        <div class="breadCard">
+          <img id="img4" class="imagesize" src="images.A02/arrowup.png" alt="Different types of bread from around the world">
+          <h3 id="bread4">Loading...</h3>
+          <p id="country4">Loading...</p>
+        </div>
+
+        <div class="breadCard">
+          <img id="img5" class="imagesize" src="images.A02/arrowup.png" alt="Different types of bread from around the world">
+          <h3 id="bread5">Loading...</h3>
+          <p id="country5">Loading...</p>
+        </div>
+
+        <button id="nextBtn">❯</button>
+
+      </div><!--breadarntheworld-->
+
+    </section><!--page0pt4-->
+
+    <section class="page0pt5">
+
+      <div class="page0pt5div1">
+
+        <div>
+            <img src="images.A02/arrowup.png" class="arrowup" alt="arrow up sticker">
+        </div>
+
+        <div>
+             <a href="#nav1" class="backtotop">Back To Top</a>
+        </div>
+
+      </div>
+
+
+  <div class="page0pt5div2">
+
+      
+
+      <div>
+
+        <h2 id="page0ff">Fun Fact</h2>
+        <p id="page0ffp">
+          Bread has been part of human history for over 14,000 years. 
+          Today, there are more than 300 varieties enjoyed worldwide, 
+          each inspired by different cultures and traditions.
+        </p>
+
+      </div>
+
+      <div>
+        <img src="images.A02/garlicbread.png" id="garlicbread" alt="Nicely Baked garlic bread">
+      </div>
+
+  </div>    
+
+    </section><!--page0pt5-->
+
+  </div><!--content-->
+
+</section><!--page0-->
+  
+
+
+
+ <section class="page" id="page1">
+
+  <header id="page1header">
+
+    <div>
+      <h2 id="page1h2">The History Of Bread</h2>
+    </div>
+
+    <div>
+
+      <p id="page1p1">
+        Discover how bread evolved over 14,000 years into one of the world's most loved foods.
+      </p><!--page1p1-->
+
+    </div>
+
+ </header>
+
+ <div class="content">
+
+  <div class="divstart">
+
+  <h2 id="h21">The Journey Of Bread</h2>
+
+  <img src="images.A02/bagelsticker.png" id="sticker1" alt="Bagel illustration">
+
+  </div>
+  <P id="p4">From wild grains to the loaves we enjoy today</P>
+  
+  <section class="sec1">
+
+<img src="images.A02/grains.jpg" id="grains" alt="Wheat grains">
+
+
+
+<div class="div1stpage">
+
+  <h2>Before Bread Was discovered</h2>
+
+    <p class="p8">Around 14 000 years ago</p>
+
+      <p>Long before bread existed, early humans survived by
+        hunting animals and gathering plants. Among the plants they collected
+        were wild grains such as wheat and barley. They used large stones to crush 
+        these grains into a coarse flour, then mixed the flour with water to make a
+        simple paste or porridge. Although this was not bread yet, it was an important 
+        discovery because it showed people that grains could be turned into a filling 
+        and nutritious food. This marked the beginning of humanity's journey towards bread-making.
+      </p>
+
+</div>
+
+  </section>
+
+  <section class="sec2">
+
+    
+
+    <div class="div2ndpage">
+
+      <h2>The First Bread Ever</h2>
+
+        <p class="p5">Around 10 000 years ago</p>
+
+          <p>As people learned to grow crops and settle into farming communities, 
+            they experimented with different ways of preparing flour. They discovered that placing
+            a mixture of flour and water on hot stones or over an open fire produced a flat, cooked
+            bread. This bread was thin, dense, and chewy because it contained no yeast. Flatbread was 
+            easy to make, required only a few ingredients, and could be carried during travel, making 
+            it one of the earliest staple foods. Even today, many cultures continue to enjoy flatbreads 
+            such as naan, pita, tortillas, and lavash.</p>
+
+    </div>
+
+    <img src="images.A02/flatbread.jpg" id="flatbread" alt="Flatbread">
+
+  </section>
+
+  <section class="sec3">
+
+  
+<img src="images.A02/breadwyeast.jpg" id="breadwyeast" alt="Bread made of yeast">
+  
+
+  <div class="div1stpage">
+
+    <h2>The discovery of yeast</h2>
+
+        <p class="p8">Around 6000 years ago</p>
+
+          <p>One of the greatest breakthroughs in bread-making happened in Ancient Egypt. 
+            Historians believe that someone accidentally left a bowl of dough uncovered for too long. 
+            Natural yeast, a tiny living microorganism found in the air, settled on the dough and caused
+            it to ferment. When the dough was baked, it became light, soft, and full of tiny air pockets
+            instead of remaining flat and dense. This accidental discovery led to the invention of leavened 
+            bread. The Egyptians became highly skilled bakers and even built special ovens to produce bread
+            more efficiently. Their techniques later influenced many other civilizations.
+          </p>
+
+    </div>
+
+  </section>
+
+  <section class="sec4">
+
+    
+
+    <div class="div2ndpage">
+
+      <h2>Bread Spreads</h2>
+
+        <p class="p5">Around 2000 years ago</p>
+
+          <p>As trade routes expanded and civilizations interacted with one another, bread-making 
+            techniques spread from Egypt to Ancient Greece, Rome, and many other parts of the world. Each culture
+            adapted bread to suit its own ingredients, climate, and traditions. In France, bakers developed the 
+            long and crispy baguette. In Italy, breads such as ciabatta became popular. In Eastern Europe, people
+            created bagels, while in India, naan became a common accompaniment to curries. Bread gradually became
+            one of the world's most important staple foods, with every region developing its own unique recipes
+            and baking methods.
+          </p>
+
+    </div>
+
+    <img src="images.A02/modernbread.jpg" id="modernbread" alt="Example of a modern bread types-Banana Bread">
+
+    </section>
+
+  <section class="sec5">
+
+    <img src="images.A02/breadaroundtw.jpg" id="breadaroundtw" alt="Bread from around the world">
+
+    <div class="div1stpage">
+
+        <h2>Bread Today</h2>
+
+        <p class="p8">Today</p>
+
+        <p>
+            Today, bread is made using advanced baking techniques and modern machinery,
+            allowing bakeries to produce thousands of loaves every day. Commercial yeast helps dough
+            rise quickly and consistently, while different types of flour and ingredients allow bakers
+            to create a wide variety of breads. Besides traditional white bread, people now enjoy wholemeal
+            bread, sourdough, brioche, croissants, gluten-free bread, and many artisan loaves. Bread is no
+            longer just a basic food—it has become an important part of cultures, celebrations, and cuisines
+            around the world. Despite the many changes in how it is made, bread remains one of the oldest and
+            most widely eaten foods in human history.
+        </p>
+
+    </div>
+
+</section>
+
+ <section class="page0pt5">
+
+      <div class="page0pt5div1">
+
+        <div>
+            <img src="images.A02/arrowup.png" class="arrowup" alt="arrowup sticker">
+        </div>
+
+        <div>
+             <a href="#nav1" class="backtotop">Back To Top</a>
+        </div>
+
+      </div>
+
+
+  <div class="page0pt5div2">
+
+      
+
+      <div>
+
+        <h2 class="pag10ff">Fun Fact</h2>
+        <p class="page1ffp">
+          Long before rubber erasers, soft white bread was commonly used to erase pencil marks!
+        </p>
+
+      </div>
+
+      <div>
+        <img src="images.A02/breaddeco.png" id="img6" alt="toasted toast">
+      </div>
+
+  </div>    
+
+    </section><!--page0pt5-->
+
+    </div>
+
+
+
+  </section>
+
+    <section class="page" id="page2">
+
+        <header id="page2header">
+        
+         <div>
+           <h2 id="page2h2">Discover Bread From Around the World</h2>
+         </div>
+
+         <div>
+            <p id="page2p1">
+              Explore famous breads from around the world and discover their unique stories.
+            </p>
+         </div>
+
+      </header><!--page2header-->
+
+       <div class="content">
+
+      <div class="main1">
+       <div id="breadtypes">
+      
+
+        <div class="div3">
+        <img src="images.A02/whitebread.jpg" id="img8" alt="White bread">
+        <div class="divtextcen">
+        <h3>White Bread</h3>
+        <p>Soft,light and fluffy texture, made of refined flour. Perfect for making sandwiches</p>
+        </div>
+        </div>
+
+        <div class="div4">
+          <img src="images.A02/sourdough.jpg" id="img9" alt="Sourdough bread">
+          <div class="divtextcen">
+          <h3>SourDough Bread</h3>
+          <p>Tangy taste and chewy texture. Made with natural yeast and fermented dough.</p>
+          </div>
+        </div>
+
+         <div class="div5">
+          <img src="images.A02/baguette.jpg" id="img10" alt="Baguette">
+          <div class="divtextcen">
+          <h3>Baguette</h3>
+          <p>A long, thin dough with a crispy crust outer, and a soft inner</p>
+          </div>
+        </div>
+
+     
+
+      
+
+        <div class="div6">
+        <img src="images.A02/ciabatta.png" id="img11" alt="Ciabatta bread"> 
+        <div class="divtextcen">
+        <h3>Ciabatta</h3>
+        <p>A rustic bread with chewy texture and airy holes</p>
+        </div>
+        </div>
+
+        <div class="div7">
+          <img src="images.A02/naan.jpg" id="img12" alt="Naan bread">
+          <div class="divtextcen">
+          <h3>Naan</h3>
+          <p>A soft and chewy flatbread that is made without yeast. Commonly paired with curry</p>
+          </div>
+        </div>
+
+         <div class="div8">
+          <img src="images.A02/bagel.jpg" id="img13" alt="Bagel">
+          <div class="divtextcen">
+          <h3>Bagel</h3>
+          <p>A chewy and dense bread, that is often served with cream cheese or eggs as breakfast</p>
+        </div>
+        </div>
+
+
+
+       
+      </div>
+        
+      <div class="recipePanel">
+        
+      <div><img src="images.A02/breaddeco5.png" id="recipeImg" alt="white bread illustration"></div>
+        
+      <div> <h2 id="recipeTitle">Click on a bread to learn its ingredients and recipe!</h2></div>
+
+      <div id="ingredients"></div>
+
+      <div id="steps"></div>
+
+         
+      </div>
+
+    </div>
+
+     
+
+
+       <section class="page0pt5">
+
+      <div class="page0pt5div1">
+
+        <div>
+            <img src="images.A02/arrowup.png" class="arrowup" alt="arrow up sticker">
+        </div>
+
+        <div>
+             <a href="#nav1" class="backtotop">Back To Top</a>
+        </div>
+
+      </div>
+
+
+  <div class="page0pt5div2">
+
+   
+      <div>
+
+         <h2 id="page2ff">Fun Fact</h2>
+    <P id="page2ffp">Ancient Egyptians would use moldy bread to treat infected cuts,
+       as the naturally occurring mold helped fight off bacteria.</P>
+
+      </div>
+
+         <div>
+        <img src="images.A02/breaddeco3.png" id="img17" alt="cartoon style sourdough illustration">
+      </div>
+
+
+  </div>    
+
+    </section><!--page0pt5-->
+    
+  </div>
+
+
+</section>
+
+
+    
+    <section class="page" id="page3">
+
+      <header id="page3header">
+        
+         <div>
+           <h2 id="page3h2">The Wonderful World Of Bread</h2>
+         </div>
+
+         <div>
+            <p id="page3p1">
+              Discover the story behind one of the world's oldest foods, learn its history,
+              explore different bread types, and test your knowledge through fun games and quizzes.
+            </p>
+         </div>
+
+      </header><!--page3header-->
+
+      <div class="content">
+      
+      <div id="game">
+      <h2>Catch the bread!</h2>
+      <h3>Click anywhere on the base line of the game area to move the basket</h3>
+      <h2 id="scorebox">Score:</h2>
+      
+
+      <img src="images.A02/bagelnobg.png" id="breadpos" alt="bagel">
+      
+      <img src="images.A02/basketwithoutbread.png" id="basketwithoutbread" alt="empty basket">
+
+      </div>
+  
+  
+
+     <h2>QUIZ</h2>
+
+<fieldset class="fieldset">
+<legend class="legend">1. When was bread first discovered?</legend>
+<label><input type="radio" name="q1" value="3000 years ago"> 3000 years ago</label>
+<label><input type="radio" name="q1" value="6000 years ago"> 6000 years ago</label>
+<label><input type="radio" name="q1" value="14 000 years ago"> 14 000 years ago</label>
+<label><input type="radio" name="q1" value="Yesterday"> Yesterday</label>
+</fieldset>
+
+<fieldset class="fieldset">
+<legend class="legend">2. Which of these is the MOST common ingredient in making all types of bread?</legend>
+<label><input type="radio" name="q2" value="hydroxide"> hydroxide</label>
+<label><input type="radio" name="q2" value="bread flour"> bread flour</label>
+<label><input type="radio" name="q2" value="egg"> egg</label>
+<label><input type="radio" name="q2" value="milk"> milk</label>
+</fieldset>
+
+<fieldset class="fieldset">
+<legend class="legend">3. Which of the following is a characteristic of a yeast made bread?</legend>
+<label><input type="radio" name="q3" value="dense"> dense</label>
+<label><input type="radio" name="q3" value="tender"> tender</label>
+<label><input type="radio" name="q3" value="fluffy"> fluffy</label>
+<label><input type="radio" name="q3" value="moist"> moist</label>
+</fieldset>
+
+<button id="quizbtnSubmit">Submit Quiz</button>
+<h3 id="quizscorebox">Not submitted</h3>
+
+</div>
+
+</section>
+
+<footer class="footer1">
+
+  <div id="footerpt1">
+
+    <div class="fullscreen">
+
+      <div>
+    <button id="btnFS">Enter FullScreen</button>
+    </div>
+
+    <div>
+    <button id="btnWS">Exit FullScreen</button>
+    </div>
+
+    </div><!--fullscreen-->
+
+    <div id="divqr">
+      <img src="images.A02/qrcode.png" id="qrcode" alt="qr code">
+      <p>Scan Me!</p>
+    </div>
+   
+  </div><!--footerpt1-->
+    
+    
+
+    <div id="footerpt2">
+
+    <p>© 2026 Bread's Journey. All Rights Reserved.</p>
+
+    <details>
+        <summary>Sources | Credits</summary>
+
+        <p>• Pixabay | Audio</p>
+        <p>• ChatGPT | Color Scheme/Design</p>
+        <p>• Pinterest | Decoration Images</p>
+        <p>• GoldMedalBakery | Info-Types</p>
+
+    </details>
+
+    </div>
+
+    <div id="footerpt3">
+
+      <div>
+        <p>Follow us</p>
+      </div>
+
+    <div>
+        <a href="https://www.instagram.com/?hl=en"><img src="images.A02/instagramlogo.png" id="instagramlogo" alt="instagram logo"></a>
+        <a href="https://www.youtube.com/"><img src="images.A02/youtubelogo.png" id="youtubelogo" alt="youtube logo"></a>
+        <a href="https://www.facebook.com/"><img src="images.A02/facebooklogo.png" id="facebooklogo" alt="facebook logo"></a>
+    </div>
+    
+
+    </div>
+
+    
+
+</footer>
+
+
+
+</body>
+
+
+
+
+
+
+
+      
